@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniform Co. — Where Identity Meets Excellence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">Uniform Co.</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#customization">Customize</a></li>
+                <li><a href="#b2b">Bulk Orders</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-secondary" onclick="scrollToSection('contact')">Get Quote</button>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Uniforms aren't about conformity.<br>They're about <span class="highlight">unity.</span></h1>
+                <p class="hero-subtitle">We don't dress teams. We craft identities. From classrooms to boardrooms, from startups to enterprises—your uniform is your silent manifesto.</p>
+                <div class="hero-cta">
+                    <button class="btn-primary" onclick="scrollToSection('categories')">Explore Collections</button>
+                    <button class="btn-outline" onclick="scrollToSection('customization')">Design Your Identity</button>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-number">50,000+</div>
+                    <div class="stat-label">Uniforms Delivered</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1,200+</div>
+                    <div class="stat-label">Organizations Trust Us</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Quality Guaranteed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories Overview -->
+    <section class="categories-overview" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>One Source. Infinite Possibilities.</h2>
+                <p>Every garment tells a story. What will yours say?</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card" onclick="scrollToSection('men')">
+                    <div class="category-icon">👔</div>
+                    <h3>Men's Line</h3>
+                    <p>Professional. Powerful. Precise.</p>
+                </div>
+                <div class="category-card" onclick="scrollToSection('women')">
+                    <div class="category-icon">👗</div>
+                    <h3>Women's Line</h3>
+                    <p>Elegant. Empowering. Exceptional.</p>
+                </div>
+                <div class="category-card" onclick="scrollToSection('kids')">
+                    <div class="category-icon">🎒</div>
+                    <h3>Kids' Line</h3>
+                    <p>Comfortable. Durable. Delightful.</p>
+                </div>
+                <div class="category-card" onclick="scrollToSection('school')">
+                    <div class="category-icon">📚</div>
+                    <h3>School Uniforms</h3>
+                    <p>Building discipline, one stitch at a time.</p>
+                </div>
+                <div class="category-card" onclick="scrollToSection('coaching')">
+                    <div class="category-icon">🎓</div>
+                    <h3>Coaching Institutes</h3>
+                    <p>Where learning meets identity.</p>
+                </div>
+                <div class="category-card" onclick="scrollToSection('corporate')">
+                    <div class="category-icon">💼</div>
+                    <h3>Corporate Teams</h3>
+                    <p>Your brand, worn with pride.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Men's Section -->
+    <section class="product-section men-section" id="men">
+        <div class="container">
+            <div class="section-split">
+                <div class="section-content">
+                    <h2>Men's Professional Line</h2>
+                    <p class="section-intro">Strength doesn't shout. It shows.</p>
+                    <div class="product-list">
+                        <div class="product-item">
+                            <h4>Formal Shirts</h4>
+                            <p>Crisp collars, impeccable fit, breathable fabrics</p>
+                        </div>
+                        <div class="product-item">
+                            <h4>Polo T-Shirts</h4>
+                            <p>Smart casual redefined for modern professionals</p>
+                        </div>
+                        <div class="product-item">
+                            <h4>Trousers & Pants</h4>
+                            <p>Tailored precision for all-day comfort</p>
+                        </div>
+                        <div class="product-item">
+                            <h4>Blazers</h4>
+                            <p>Command attention without saying a word</p>
+                        </div>
+                        <div class="product-item">
+                            <h4>Jackets</h4>
+                            <p>Weather-ready, style-forward outerwear</p>
+                        </div>
+                    </div>
+                    <button class="btn-secondary" onclick="openRFQModal('Men\'s Line')">Request Quote</button>
+                </div>
+                <div class="section-visual">
+                    <div class="visual-placeholder men-visual">
+                        <span>Premium Men's Uniforms</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Women's Section -->
+    <section class="product-section women-section" id="women">
+        <div class="container">
+            <div class="section-split reverse">
+                <div class="section-visual">
+                    <div class="visual-placeholder women-visual">
+                        <span>Elegant Women's Collection</span>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <h2>Women's Professional Line</h2>
+                    <p class="section-intro">Grace meets grit. Style meets substance.</p>
+                    <div class="product-list">
+                        <div class="product-item">
+                            <h4>Formal Shirts & Blouses</h4>
+                            <p>Sophisticated cuts, modern silhouettes</p>
+                        </div>
+                        <div class="product-item">
+                            <h4>Polo T-Shirts</h4>
+                            <p>Versatile comfort for dynamic workdays</p>
+                        </div>
+                        <div class="product-item">
+                            <h4>Trousers & Formal Pants</h4>
+                            <p>Flattering fits that move with you</p>
+                        </div>
+                        <div class="product-item">
+                            <h4>Blazers</h4>
+                            <p>Confidence tailored to perfection</p>
+                        </div>
+                        <div class="product-item">
+                            <h4>Jackets</h4>
+                            <p>Layer your excellence</p>
+                        </div>
+                    </div>
+                    <button class="btn-secondary" onclick="openRFQModal('Women\'s Line')">Request Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kids Section -->
+    <section class="product-section kids-section" id="kids">
+        <div class="container">
+            <div class="section-split">
+                <div class="section-content">
+                    <h2>Kids' Collection</h2>
+                    <p class="section-intro">Because growing up should be comfortable.</p>
+                    <div class="product-list">
+                        <div class="product-item">
+                            <h4>School Shirts & T-Shirts</h4>
+                            <p>Durable fabrics that survive playground adventures</p>
+                        </div>
+                        <div class="product-item">
+                            <h4>Polo T-Shirts</h4>
+                            <p>Smart, sporty, and stain-resistant</p>
+                        </div>
+                        <div class="product-item">
+                            <h4>Trousers & Shorts</h4>
+                            <p>Freedom to run, jump, and learn</p>
+                        </div>
+                        <div class="product-item">
+                            <h4>Blazers</h4>
+                            <p>Little professionals, big dreams</p>
+                        </div>
+                        <div class="product-item">
+                            <h4>Sports Jackets</h4>
+                            <p>Protection meets playfulness</p>
+                        </div>
+                    </div>
+                    <button class="btn-secondary" onclick="openRFQModal('Kids\' Collection')">Request Quote</button>
+                </div>
+                <div class="section-visual">
+                    <div class="visual-placeholder kids-visual">
+                        <span>Comfortable Kids' Wear</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- School Uniforms Section -->
+    <section class="institutional-section school-section" id="school">
+        <div class="container">
+            <h2>School Uniforms</h2>
+            <p class="section-intro">Discipline begins with dignity. Pride begins with presentation.</p>
+            <div class="institutional-grid">
+                <div class="institutional-card">
+                    <h3>Primary Schools</h3>
+                    <ul>
+                        <li>Soft, skin-friendly fabrics</li>
+                        <li>Easy-care, wash-resistant colors</li>
+                        <li>Reinforced stitching for active kids</li>
+                        <li>Custom school badges & emblems</li>
+                    </ul>
+                </div>
+                <div class="institutional-card">
+                    <h3>Secondary Schools</h3>
+                    <ul>
+                        <li>Age-appropriate designs</li>
+                        <li>Breathable, moisture-wicking materials</li>
+                        <li>Multiple style options</li>
+                        <li>Seasonal variations available</li>
+                    </ul>
+                </div>
+                <div class="institutional-card">
+                    <h3>High Schools</h3>
+                    <ul>
+                        <li>Mature, sophisticated cuts</li>
+                        <li>Premium fabric blends</li>
+                        <li>Customizable house colors</li>
+                        <li>Sports & formal combinations</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cta-center">
+                <button class="btn-primary" onclick="openRFQModal('School Uniforms')">Get School Quote</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coaching Institute Section -->
+    <section class="institutional-section coaching-section" id="coaching">
+        <div class="container">
+            <h2>Coaching Institute Uniforms</h2>
+            <p class="section-intro">Where aspiration meets attire.</p>
+            <div class="coaching-features">
+                <div class="feature-row">
+                    <div class="feature-icon">✓</div>
+                    <div class="feature-text">
+                        <h4>Brand Identity</h4>
+                        <p>Stand out in a crowded education market with distinctive uniforms</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-icon">✓</div>
+                    <div class="feature-text">
+                        <h4>Student Unity</h4>
+                        <p>Foster belonging and eliminate distractions</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-icon">✓</div>
+                    <div class="feature-text">
+                        <h4>Professional Image</h4>
+                        <p>Parents trust institutes that look organized</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-icon">✓</div>
+                    <div class="feature-text">
+                        <h4>Flexible Options</h4>
+                        <p>T-shirts, polos, ID card holders, and more</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-center">
+                <button class="btn-primary" onclick="openRFQModal('Coaching Institute')">Partner With Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corporate Section -->
+    <section class="institutional-section corporate-section" id="corporate">
+        <div class="container">
+            <h2>Corporate Team Uniforms</h2>
+            <p class="section-intro">Your brand deserves to be worn, not just seen.</p>
+            <div class="corporate-grid">
+                <div class="corporate-card">
+                    <div class="corporate-icon">🏢</div>
+                    <h3>Office Wear</h3>
+                    <p>Shirts, trousers, blazers for your corporate team</p>
+                </div>
+                <div class="corporate-card">
+                    <div class="corporate-icon">🛠️</div>
+                    <h3>Industrial Wear</h3>
+                    <p>Durable workwear with safety compliance</p>
+                </div>
+                <div class="corporate-card">
+                    <div class="corporate-icon">🍽️</div>
+                    <h3>Hospitality Wear</h3>
+                    <p>Elegant uniforms for hotels & restaurants</p>
+                </div>
+                <div class="corporate-card">
+                    <div class="corporate-icon">🏥</div>
+                    <h3>Healthcare Wear</h3>
+                    <p>Comfortable, hygienic medical uniforms</p>
+                </div>
+                <div class="corporate-card">
+                    <div class="corporate-icon">🚚</div>
+                    <h3>Logistics Wear</h3>
+                    <p>Functional attire for delivery & warehouse teams</p>
+                </div>
+                <div class="corporate-card">
+                    <div class="corporate-icon">🎯</div>
+                    <h3>Event Staff</h3>
+                    <p>Make your team instantly recognizable</p>
+                </div>
+            </div>
+            <div class="cta-center">
+                <button class="btn-primary" onclick="openRFQModal('Corporate Uniforms')">Outfit Your Team</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customization Module -->
+    <section class="customization-section" id="customization">
+        <div class="container">
+            <div class="section-header">
+                <h2>Customization Studio</h2>
+                <p>Your logo. Your colors. Your identity.</p>
+            </div>
+            <div class="customization-content">
+                <div class="customization-options">
+                    <div class="custom-option" onclick="selectCustomOption('embroidery')">
+                        <div class="option-visual embroidery-visual">
+                            <span>🧵</span>
+                        </div>
+                        <h3>Logo Embroidery</h3>
+                        <p>Premium thread work that lasts a lifetime</p>
+                        <ul class="option-features">
+                            <li>High-density stitching</li>
+                            <li>Colorfast threads</li>
+                            <li>Precision placement</li>
+                            <li>3D puff options</li>
+                        </ul>
+                    </div>
+                    <div class="custom-option" onclick="selectCustomOption('printing')">
+                        <div class="option-visual printing-visual">
+                            <span>🖨️</span>
+                        </div>
+                        <h3>Logo Printing</h3>
+                        <p>Vibrant, detailed prints for bold statements</p>
+                        <ul class="option-features">
+                            <li>Screen printing</li>
+                            <li>Heat transfer</li>
+                            <li>Sublimation printing</li>
+                            <li>Full-color designs</li>
+                        </ul>
+                    </div>
+                    <div class="custom-option" onclick="selectCustomOption('branding')">
+                        <div class="option-visual branding-visual">
+                            <span>⭐</span>
+                        </div>
+                        <h3>Custom Branding</h3>
+                        <p>Complete brand integration</p>
+                        <ul class="option-features">
+                            <li>Custom labels & tags</li>
+                            <li>Unique color matching</li>
+                            <li>Personalized packaging</li>
+                            <li>Name badges</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="customization-cta">
+                    <h3>Ready to customize?</h3>
+                    <p>Upload your logo, choose your options, and we'll handle the rest.</p>
+                    <button class="btn-primary" onclick="openCustomizationTool()">Start Customizing</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- B2B Bulk Order Section -->
+    <section class="b2b-section" id="b2b">
+        <div class="container">
+            <div class="b2b-content">
+                <div class="b2b-header">
+                    <h2>Bulk Orders, Simplified</h2>
+                    <p>Because scale shouldn't mean complexity.</p>
+                </div>
+                <div class="b2b-grid">
+                    <div class="b2b-benefit">
+                        <div class="benefit-number">01</div>
+                        <h3>Volume Pricing</h3>
+                        <p>The more you order, the more you save. Transparent pricing, no hidden costs.</p>
+                    </div>
+                    <div class="b2b-benefit">
+                        <div class="benefit-number">02</div>
+                        <h3>Flexible Payment</h3>
+                        <p>Net 30/60/90 terms for verified businesses. We grow with you.</p>
+                    </div>
+                    <div class="b2b-benefit">
+                        <div class="benefit-number">03</div>
+                        <h3>Dedicated Account Manager</h3>
+                        <p>One point of contact for all your needs. No runaround.</p>
+                    </div>
+                    <div class="b2b-benefit">
+                        <div class="benefit-number">04</div>
+                        <h3>Fast Turnaround</h3>
+                        <p>15-day production for standard orders. Rush orders available.</p>
+                    </div>
+                    <div class="b2b-benefit">
+                        <div class="benefit-number">05</div>
+                        <h3>Quality Guarantee</h3>
+                        <p>100% satisfaction or we'll remake it. Period.</p>
+                    </div>
+                    <div class="b2b-benefit">
+                        <div class="benefit-number">06</div>
+                        <h3>Nationwide Delivery</h3>
+                        <p>Free shipping on bulk orders. Track every package.</p>
+                    </div>
+                </div>
+                <div class="b2b-pricing-tiers">
+                    <h3>Pricing Tiers</h3>
+                    <div class="pricing-table">
+                        <div class="pricing-tier">
+                            <div class="tier-quantity">50-200 units</div>
+                            <div class="tier-discount">5% discount</div>
+                        </div>
+                        <div class="pricing-tier">
+                            <div class="tier-quantity">201-500 units</div>
+                            <div class="tier-discount">10% discount</div>
+                        </div>
+                        <div class="pricing-tier">
+                            <div class="tier-quantity">501-1000 units</div>
+                            <div class="tier-discount">15% discount</div>
+                        </div>
+                        <div class="pricing-tier highlighted">
+                            <div class="tier-quantity">1000+ units</div>
+                            <div class="tier-discount">Custom pricing</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-center">
+                    <button class="btn-primary" onclick="openRFQModal('Bulk Order')">Get Bulk Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- B2C Shopping Preview -->
+    <section class="b2c-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Shop Individual Pieces</h2>
+                <p>Not buying in bulk? Browse our retail collection.</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image shirt-img"></div>
+                    <h4>Premium Formal Shirt</h4>
+                    <p>100% cotton, wrinkle-resistant</p>
+                    <div class="product-price">$29.99</div>
+                    <button class="btn-add-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image polo-img"></div>
+                    <h4>Classic Polo T-Shirt</h4>
+                    <p>Pique cotton blend, breathable</p>
+                    <div class="product-price">$24.99</div>
+                    <button class="btn-add-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image trouser-img"></div>
+                    <h4>Tailored Trousers</h4>
+                    <p>Stretch fabric, modern fit</p>
+                    <div class="product-price">$39.99</div>
+                    <button class="btn-add-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image blazer-img"></div>
+                    <h4>Professional Blazer</h4>
+                    <p>Wool blend, structured shoulders</p>
+                    <div class="product-price">$89.99</div>
+                    <button class="btn-add-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="cta-center">
+                <button class="btn-outline">View Full Catalog</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Story Section -->
+    <section class="story-section" id="story">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2>The Uniform Rebellion</h2>
+                    <p class="story-intro">We started with a heretical idea:</p>
+                    <p>What if uniforms didn't erase individuality, but amplified identity?</p>
+                    <p>For too long, the uniform industry has been about sameness. Bland fabrics. Generic cuts. Soulless supply chains. We said no.</p>
+                    <p>Since 2015, we've been rethinking every stitch. We believe in fabric that breathes, fits that flatter, and processes that respect both people and planet.</p>
+                    <p>We don't make uniforms for faceless masses. We craft identity-wear for teams that matter—schools shaping futures, companies building legacies, institutes nurturing dreams.</p>
+                    <p class="story-conclusion">Your uniform isn't a costume. It's your second skin. Let's make it count.</p>
+                </div>
+                <div class="story-visual">
+                    <div class="story-quote">
+                        <blockquote>
+                            "Excellence is not in the fabric alone,<br>but in the hands that craft it,<br>and the hearts that wear it."
+                        </blockquote>
+                        <cite>— Our Founding Principle</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Assurance Section -->
+    <section class="quality-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quality Without Compromise</h2>
+                <p>Promises are easy. Proof is harder. Here's ours.</p>
+            </div>
+            <div class="quality-grid">
+                <div class="quality-card">
+                    <div class="quality-icon">🧪</div>
+                    <h3>Fabric Testing</h3>
+                    <p>Every batch tested for colorfastness, shrinkage, and durability. ISO 9001 certified processes.</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">✂️</div>
+                    <h3>Precision Cutting</h3>
+                    <p>Computer-aided pattern making ensures consistency across thousands of units.</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">🪡</div>
+                    <h3>Expert Stitching</h3>
+                    <p>Triple-stitched seams, reinforced stress points. Our garments survive real life.</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">🔍</div>
+                    <h3>Multi-Point Inspection</h3>
+                    <p>Each piece inspected at 5 stages before it reaches you. Zero tolerance for defects.</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">🌱</div>
+                    <h3>Sustainable Sourcing</h3>
+                    <p>Eco-friendly dyes, ethical labor, responsible manufacturing. Good for people, better for planet.</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">📜</div>
+                    <h3>Lifetime Support</h3>
+                    <p>Something wrong? We'll fix it, replace it, or refund it. Your satisfaction is non-negotiable.</p>
+                </div>
+            </div>
+            <div class="quality-certifications">
+                <h3>Our Certifications</h3>
+                <div class="cert-badges">
+                    <span class="cert-badge">ISO 9001:2015</span>
+                    <span class="cert-badge">OEKO-TEX Certified</span>
+                    <span class="cert-badge">Fair Trade</span>
+                    <span class="cert-badge">GOTS Organic</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/RFQ Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Let's Create Together</h2>
+                    <p>Whether you need 50 shirts or 5,000, we're ready to listen.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hello@uniformco.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Address</h4>
+                                <p>123 Fashion District, Suite 400<br>New York, NY 10001</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Mon-Fri: 9:00 AM - 6:00 PM EST<br>Sat: 10:00 AM - 4:00 PM EST</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="rfqForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="organization">Organization Name *</label>
+                            <input type="text" id="organization" name="organization" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="orderType">Order Type *</label>
+                            <select id="orderType" name="orderType" required>
+                                <option value="">Select...</option>
+                                <option value="school">School Uniforms</option>
+                                <option value="coaching">Coaching Institute</option>
+                                <option value="corporate">Corporate Uniforms</option>
+                                <option value="bulk">Bulk Order</option>
+                                <option value="retail">Retail Purchase</option>
+                                <option value="custom">Custom Request</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Estimated Quantity *</label>
+                            <input type="number" id="quantity" name="quantity" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell Us Your Requirements *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" name="customization" id="customization">
+                                I need logo embroidery/printing
+                            </label>
+                        </div>
+                        <button type="submit" class="btn-primary btn-submit">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Uniform Co.</h3>
+                    <p>Where identity meets excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#customization">Customization</a></li>
+                        <li><a href="#b2b">Bulk Orders</a></li>
+                        <li><a href="#story">Our Story</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Returns Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Uniform Co. All rights reserved. Crafted with care.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for RFQ -->
+    <div id="rfqModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeRFQModal()">&times;</span>
+            <h2>Request a Quote</h2>
+            <p id="modalCategory"></p>
+            <form id="quickRFQForm" onsubmit="handleQuickRFQ(event)">
+                <div class="form-group">
+                    <label for="modalName">Your Name *</label>
+                    <input type="text" id="modalName" required>
+                </div>
+                <div class="form-group">
+                    <label for="modalEmail">Email *</label>
+                    <input type="email" id="modalEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="modalPhone">Phone</label>
+                    <input type="tel" id="modalPhone">
+                </div>
+                <div class="form-group">
+                    <label for="modalQuantity">Quantity *</label>
+                    <input type="number" id="modalQuantity" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="modalMessage">Message</label>
+                    <textarea id="modalMessage" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Submit Quote Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for Customization Tool -->
+    <div id="customModal" class="modal">
+        <div class="modal-content custom-modal-large">
+            <span class="modal-close" onclick="closeCustomModal()">&times;</span>
+            <h2>Customization Studio</h2>
+            <div class="custom-tool">
+                <div class="custom-tool-section">
+                    <h3>1. Choose Product Type</h3>
+                    <div class="custom-options-grid">
+                        <button class="custom-btn" onclick="selectProduct('shirt')">Shirt</button>
+                        <button class="custom-btn" onclick="selectProduct('polo')">Polo T-Shirt</button>
+                        <button class="custom-btn" onclick="selectProduct('trouser')">Trousers</button>
+                        <button class="custom-btn" onclick="selectProduct('blazer')">Blazer</button>
+                    </div>
+                </div>
+                <div class="custom-tool-section">
+                    <h3>2. Choose Customization Method</h3>
+                    <div class="custom-options-grid">
+                        <button class="custom-btn" onclick="selectMethod('embroidery')">Embroidery</button>
+                        <button class="custom-btn" onclick="selectMethod('printing')">Printing</button>
+                        <button class="custom-btn" onclick="selectMethod('both')">Both</button>
+                    </div>
+                </div>
+                <div class="custom-tool-section">
+                    <h3>3. Upload Logo (Optional)</h3>
+                    <input type="file" id="logoUpload" accept="image/*">
+                    <p class="helper-text">Supported formats: JPG, PNG, SVG (max 5MB)</p>
+                </div>
+                <div class="custom-tool-section">
+                    <h3>4. Additional Details</h3>
+                    <textarea id="customNotes" rows="4" placeholder="Logo placement, colors, special instructions..."></textarea>
+                </div>
+                <button class="btn-primary" onclick="submitCustomization()">Request Custom Quote</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Message -->
+    <div id="successMessage" class="success-toast">
+        <span id="successText">Form submitted successfully!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
